@@ -13,7 +13,7 @@
 
 Route::get('/', 'PagesController@root')->name('root');
 
-//Auth::routes();
+//Auth::routes(['verify' => true]);
 
 // 用户身份验证相关的路由
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
